@@ -1,0 +1,29 @@
+@import "../../assets/styles/theme.less";
+.agreement {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ridio_box {
+    .ridio_menu {
+      height: 34px;
+      border-radius: 50%;
+      width: 34px;
+      box-sizing: border-box;
+      background-color: @main-text;
+    }
+    input:checked + .ridio_menu {
+      background-color: @primary;
+      border: 4px solid @main-text;
+    }
+  }
+
+  .tip {
+    padding-left: 20px;
+    font-size: 28px;
+    color: @main-text;
+    span {
+      color: @primary;
+    }
+  }
+}

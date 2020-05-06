@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.1bcb391a.chunk.css",
+    "main.js": "./static/js/main.f1615d62.chunk.js",
+    "main.js.map": "./static/js/main.f1615d62.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.a23c3983.js",
+    "runtime-main.js.map": "./static/js/runtime-main.a23c3983.js.map",
+    "static/js/2.6d2ec165.chunk.js": "./static/js/2.6d2ec165.chunk.js",
+    "static/js/2.6d2ec165.chunk.js.map": "./static/js/2.6d2ec165.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.16d381d662f05a01bb1e987871c3f74f.js": "./precache-manifest.16d381d662f05a01bb1e987871c3f74f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.1bcb391a.chunk.css.map": "./static/css/main.1bcb391a.chunk.css.map",
+    "static/js/2.6d2ec165.chunk.js.LICENSE.txt": "./static/js/2.6d2ec165.chunk.js.LICENSE.txt",
+    "static/media/index.less": "./static/media/banner.753ef44f.png",
+    "static/media/grid_help.svg": "./static/media/grid_help.fd8ef1f3.svg",
+    "static/media/my.less": "./static/media/my_bg.f2612e5a.png",
+    "static/media/order_load.svg": "./static/media/order_load.b4ef7129.svg",
+    "static/media/order_over.svg": "./static/media/order_over.b455ad44.svg",
+    "static/media/svg_alipay.svg": "./static/media/svg_alipay.e162fe40.svg",
+    "static/media/svg_bank.svg": "./static/media/svg_bank.737261f6.svg",
+    "static/media/svg_defalut.svg": "./static/media/svg_defalut.45274f94.svg",
+    "static/media/svg_paypal.svg": "./static/media/svg_paypal.38983190.svg",
+    "static/media/test_avator.jpg": "./static/media/test_avator.382f5b72.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a23c3983.js",
+    "static/js/2.6d2ec165.chunk.js",
+    "static/css/main.1bcb391a.chunk.css",
+    "static/js/main.f1615d62.chunk.js"
+  ]
+}

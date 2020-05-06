@@ -1,0 +1,21 @@
+@import "../../assets/styles/theme.less";
+.my_list_item {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  align-items: center;
+  .lit_title {
+    font-size: 30px;
+  }
+  .lit_right {
+    display: flex;
+    align-items: center;
+    .oi_icon {
+      margin-left: 20px;
+    }
+  }
+  &:not(:last-child) {
+    border-bottom: 2px solid @main-line;
+  }
+}

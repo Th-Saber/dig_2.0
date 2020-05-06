@@ -1,0 +1,176 @@
+@import "../../../../../assets/styles/theme.less";
+.tab_1 {
+  .rose_tip {
+    text-align: center;
+    font-size: 26px;
+    color: @info-text;
+  }
+  .serch_box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 172px;
+    align-content: space-evenly;
+    background-color: @bg-clr;
+    .input_box {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      span {
+        color: @main-text;
+        font-size: 26px;
+        margin-right: 20px;
+      }
+      .serch_input {
+        padding: 0 15px;
+        font-size: 26px;
+        line-height: 60px;
+        height: 60px;
+        flex: 1;
+        background-color: @bf-clr;
+        &.down_int {
+          color: @int-down-clr;
+        }
+        input {
+          width: 100%;
+          height: 100%;
+          color: @main-text;
+        }
+      }
+      .bth_group {
+        flex: 1;
+        button {
+          background-color: @bf-clr;
+          border: 1px solid @main-line;
+          color: @main-text;
+          font-size: 26px;
+          width: 100px;
+          height: 60px;
+          line-height: 1em;
+          &.input_act_btn_1 {
+            background-color: @btn-up-bg;
+            border-color: @btn-up-bg;
+          }
+          &.input_act_btn_2 {
+            background-color: @btn-down-bg;
+            border-color: @btn-down-bg;
+          }
+        }
+      }
+      .b_query {
+        border-radius: 8px;
+        text-align: center;
+        width: 94px;
+        height: 60px;
+        line-height: 1em;
+        color: @main-text;
+        background-color: @primary;
+        font-size: 28px;
+      }
+    }
+  }
+  //  底部指数详情样式
+  .rose_box {
+    .title_rose {
+      color: @info-text;
+    }
+    .item_click_act {
+      background-color: rgba(55, 135, 229, 0.5);
+    }
+    .dis_item {
+      opacity: 0.5;
+    }
+    .grid_box {
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 25% 30% 25% 20%;
+      border-bottom: 1px solid @main-line;
+      height: 80px;
+      line-height: 80px;
+      font-size: 28px;
+    }
+    .rose_empty {
+      margin-top: 40px;
+      text-align: center;
+      color: @info-text;
+      font-size: 28px;
+    }
+  }
+}
+.tab_2 {
+  color: @main-text;
+  .two_list {
+    p {
+      height: 100px;
+      line-height: 100px;
+      font-size: 30px;
+      padding: 0 24px;
+      box-sizing: border-box;
+      border-bottom: 1px solid @main-line;
+      background-color: @bg-clr;
+    }
+    // 头部
+    .head_m_box {
+      padding: 0 24px;
+      border-bottom: 1px solid @main-line;
+      background-color: @bg-clr;
+      height: 90px;
+      .two_header {
+        font-size: 26px;
+        color: @info-text;
+      }
+    }
+
+    .two_list_box {
+      padding: 0 24px;
+      background-color: @bg-clr;
+      &:not(:last-child) {
+        border-bottom: 1px solid @main-line;
+        margin-bottom: 20px;
+      }
+      .top_head {
+        padding: 20px 0;
+        border-bottom: 1px solid @main-line;
+      }
+      p {
+        // padding: 20px 0;
+        color: @primary;
+        font-size: 30px;
+        border-bottom: 1px solid @main-line;
+      }
+      .two_list_item {
+        .two_CC_box {
+          padding: 20px 0;
+          height: 100%;
+          text-align: center;
+          color: @main-text;
+          .title {
+            font-size: 30px;
+            font-weight: 600;
+            color: @info-text;
+          }
+          .value_box {
+            font-size: 28px;
+            margin-top: 20px;
+          }
+          .invest {
+            font-size: 30px;
+            font-weight: 600;
+            color: @primary;
+          }
+        }
+      }
+    }
+  }
+  .grid_box {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+  }
+  .empty_data {
+    padding: 40px 0;
+    text-align: center;
+    color: @info-text;
+    font-size: 28px;
+  }
+}

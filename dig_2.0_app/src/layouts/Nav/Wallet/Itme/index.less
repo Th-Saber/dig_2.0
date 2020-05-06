@@ -1,0 +1,361 @@
+@import "../../../../assets/styles/theme.less";
+// 法币交易
+.fb {
+  .am-tabs-default-bar-tab::after {
+    height: 0 !important;
+  }
+  color: @main-text;
+  .or_top_box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    background-color: @bg-clr;
+    justify-content: space-between;
+    span {
+      font-size: 23px;
+      text-align: center;
+      color: @primary;
+    }
+    .or_right {
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .release_btn {
+        margin-left: 40px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        color: @main-text;
+        background-color: @primary;
+        font-size: 30px;
+      }
+    }
+  }
+  .dom_box {
+    background-color: @bg-clr;
+    .dom_item {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      &:not(:last-child) {
+        border-bottom: 1px solid @main-line;
+      }
+      .avator {
+        height: 120px;
+        width: 120px;
+        border-radius: 12px;
+      }
+      .center {
+        flex: 1;
+        margin: 0 36px;
+        color: @info-text;
+        .topName {
+          display: flex;
+          align-items: center;
+          font-size: 28px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .num {
+          margin-top: 14px;
+          font-size: 22px;
+        }
+        .edu {
+          font-size: 22px;
+          //   margin-top: 6px;
+        }
+      }
+      .right {
+        p {
+          font-size: 28px;
+          font-weight: 550;
+          color: @int-down-clr;
+        }
+        button {
+          margin-top: 20px;
+          height: 60px;
+          line-height: 1em;
+          width: 180px;
+          text-align: center;
+          color: @main-text;
+          border-radius: 10px;
+          font-size: 30px;
+          &.b_buy {
+            background-color: @primary;
+          }
+          &.b_mill {
+            background-color: @danger;
+          }
+        }
+      }
+    }
+  }
+  .empty_data {
+    padding: 40px 0;
+    text-align: center;
+    color: @info-text;
+    font-size: 28px;
+  }
+}
+// 币币交易
+.bb {
+  color: @main-text;
+  .bb_head_top {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    background-color: @bg-clr;
+    padding: 0 24px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    .name {
+      margin-left: 22px;
+      flex: 1;
+      font-size: 26px;
+    }
+  }
+  .bb_buy_box {
+    padding: 36px 24px;
+    background-color: @bg-clr;
+    display: flex;
+    justify-content: space-between;
+    .L_box {
+      width: 400px;
+      .btn_group {
+        display: flex;
+        justify-content: space-between;
+        .b_btn {
+          width: 180px;
+          height: 60px;
+          color: @main-text;
+          border-radius: 8px;
+          line-height: 60px;
+          text-align: center;
+          font-size: 30px;
+          background-color: @bf-clr;
+          &.act_buy_btn {
+            background-color: @btn-up-bg;
+          }
+          &.act_pay_btn {
+            background-color: @btn-down-bg;
+          }
+        }
+      }
+      .L_select {
+        margin: 36px 0;
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 28px;
+          color: @main-text;
+        }
+      }
+      .num_price_box {
+        box-sizing: border-box;
+        height: 76px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid @primary;
+        button {
+          color: @main-text;
+          height: 74px;
+          width: 74px;
+          vertical-align: middle;
+          font-size: 40px;
+          font-weight: 600;
+          &:first-child {
+            border-right: 1px solid @primary;
+          }
+          &:last-child {
+            border-left: 1px solid @primary;
+          }
+        }
+        .input_box {
+          flex: 1;
+        }
+        input {
+          color: @main-text;
+          width: 100%;
+          height: 100%;
+          font-weight: 500;
+          text-align: center;
+          font-size: 26px;
+          &:focus {
+          }
+        }
+      }
+      .show_input {
+        margin-top: 24px;
+        input {
+          width: 100%;
+          height: 76px;
+          box-sizing: border-box;
+          border: 1px solid @main-line;
+          font-size: 30px;
+          line-height: 74px;
+          padding: 0 24px;
+          color: @main-text;
+          &:focus {
+            border: 1px solid @primary;
+          }
+          &::-webkit-input-placeholder {
+            color: @int-text;
+          }
+        }
+      }
+      .L_b_msg {
+        margin: 50px 0;
+        .b_msg_item {
+          font-size: 24px;
+          color: @main-text;
+          margin: 20px 0;
+        }
+      }
+      .b_btn_t {
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        font-size: 30px;
+        color: @main-text;
+        text-align: center;
+        border-radius: 8px;
+        &.buy_b {
+          background-color: @btn-up-bg;
+        }
+        &.pay_b {
+          background-color: @btn-down-bg;
+        }
+      }
+    }
+    .R_box {
+      flex: 1;
+      margin-left: 30px;
+    }
+  }
+  .my_tab_box {
+    .tab_box {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      background-color: @bg-clr;
+      padding: 0 24px;
+      justify-content: space-between;
+      border-bottom: 1px solid @main-line;
+      .tab_item {
+        font-size: 28px;
+        text-align: center;
+        height: 100%;
+        line-height: 88px;
+        color: @main-text;
+        span {
+          font-size: 22px;
+        }
+        &.b_act_tab {
+          color: @primary;
+          border-bottom: 1px solid @primary;
+        }
+      }
+    }
+  }
+}
+// 合约交易
+.cont {
+  color: @main-text;
+  position: relative;
+  .deasfas {
+    height: 116px;
+  }
+  .my-drawer {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .top_type {
+    display: flex;
+    padding: 36px 24px;
+    background-color: @bg-clr;
+    .T_text {
+      font-size: 30px;
+      color: @main-text;
+      margin-right: 56px;
+      &.top_active {
+        color: @primary;
+      }
+    }
+    .bb_head_top {
+      flex: 1;
+      text-align: right;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+//期权
+.two {
+  color: @main-text;
+  .bb_head_top {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    background-color: @bg-clr;
+    padding: 0 24px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    .name {
+      margin-left: 22px;
+      flex: 1;
+      font-size: 30px;
+      b {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      span {
+        color: @primary;
+        font-size: 24px;
+      }
+    }
+    .r_rot {
+      font-size: 24px;
+      &.r_up_rot {
+        color: @int-up-clr;
+      }
+      &.r_down_rot {
+        color: @int-down-clr;
+      }
+    }
+  }
+  .buy_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    button {
+      width: 186px;
+      line-height: 1em;
+      height: 66px;
+      font-size: 30px;
+      margin: 0 14px;
+      border-radius: 8px;
+      color: @main-text;
+      border: 1px solid @main-line;
+      background-color: @bg-clr;
+      &.buy_group_act_btn {
+        background-color: @primary;
+      }
+    }
+  }
+}

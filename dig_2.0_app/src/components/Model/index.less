@@ -1,0 +1,620 @@
+@import "../../assets/styles/theme.less";
+.my_pass_model {
+  width: 500px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  &.an_end_move {
+    animation: endMove 0.2s ease-out forwards;
+  }
+  label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    height: 0;
+  }
+  .pwd_item {
+    display: flex;
+    justify-content: space-around;
+    .passItme {
+      height: 90px;
+      width: 80px;
+      border: 1px solid @main-line;
+      background-color: @bg-clr;
+      &.input_out {
+        position: relative;
+        &::after {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: @main-text;
+          color: @main-text;
+          position: absolute;
+          top: ceil(50%-15px);
+          right: ceil(50%-15px);
+        }
+      }
+      &.next_box_input {
+        animation: shakeBorder 2s ease infinite;
+      }
+    }
+  }
+  button {
+    margin-top: 50px;
+    height: 60px;
+    line-height: 60px;
+    width: 236px;
+    text-align: center;
+    font-size: 30px;
+    color: @main-text;
+    border-radius: 4px;
+    background-color: @btn-up-bg;
+  }
+}
+.my_pay_model {
+  width: 660px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .top_tip {
+    font-size: 20px;
+    color: @primary;
+    margin-bottom: 40px;
+  }
+  .inputCom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    .label {
+      color: @info-text;
+      width: 170px;
+      font-size: 28px;
+      text-align: right;
+    }
+    .input_box {
+      flex: 1;
+      background-color: @bg-clr;
+      margin-left: 14px;
+      input {
+        height: 62px;
+        border: 1px solid @main-line;
+        width: 100%;
+        line-height: 1em;
+        padding: 0 20px;
+        color: @main-text;
+        &:focus {
+          border: 1px solid @primary;
+        }
+      }
+    }
+  }
+  .pay_type {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    .label {
+      color: @info-text;
+      width: 170px;
+      font-size: 28px;
+      text-align: right;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .radio_box {
+      label {
+        display: flex;
+        align-items: center;
+      }
+
+      .ridio_menu {
+        height: 34px;
+        border-radius: 50%;
+        width: 34px;
+        box-sizing: border-box;
+        background-color: @main-text;
+        margin-right: 20px;
+      }
+      input:checked + .ridio_menu {
+        background-color: @primary;
+        border: 4px solid @main-text;
+      }
+    }
+  }
+  .bot_tip {
+    font-size: 26px;
+    margin: 28px;
+    color: @primary;
+  }
+  .bot_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 238px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 30px;
+    background-color: @btn-up-bg;
+  }
+}
+.my_check_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .top_tip {
+    font-size: 31px;
+    margin-bottom: 30px;
+  }
+  .inputCom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    .label {
+      color: @info-text;
+      font-size: 28px;
+      margin-right: 30px;
+    }
+    .user_label {
+      width: 100px;
+      text-align: right;
+    }
+    .my_cont_set {
+      font-size: 28px;
+      color: @primary;
+      width: 160px;
+      text-align: center;
+      margin-left: 10px;
+    }
+    .input_box {
+      flex: 1;
+      background-color: @bg-clr;
+      display: flex;
+      align-items: center;
+      position: relative;
+      input {
+        height: 62px;
+        width: 100%;
+        line-height: 1em;
+        padding-left: 20px;
+        padding-right: 56px;
+        color: @main-text;
+        transition: border 0.5s ease-in-out;
+        border: 1px solid @main-line;
+        &:focus {
+          border-color: @primary;
+        }
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        height: 22px;
+        width: 36px;
+      }
+    }
+  }
+  .bot_tip {
+    margin: 60px 0 36px;
+    font-size: 30px;
+    color: @primary;
+    align-self: start;
+  }
+  .bot_btn {
+    margin-top: 60px;
+    height: 62px;
+    border-radius: 8px;
+    width: 300px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    background-color: @primary;
+  }
+}
+.my_input_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .input_box {
+    margin-top: 30px;
+    width: 100%;
+    background-color: @bg-clr;
+    input {
+      height: 62px;
+      width: 100%;
+      line-height: 1em;
+      padding-left: 20px;
+      padding-right: 56px;
+      color: @main-text;
+      transition: border 0.5s ease-in-out;
+      border: 1px solid @main-line;
+      &:focus {
+        border-color: @primary;
+      }
+    }
+  }
+  .input_btn_box {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .input_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 260px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &.bot_btn {
+      background-color: @primary;
+      color: @main-text;
+    }
+    &.all_btn {
+      border: 2px solid @primary;
+      color: @primary;
+    }
+  }
+}
+.my_hint_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .hint_box {
+    font-size: 28px;
+    margin: 30px 0 60px;
+  }
+  .bot_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 260px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    background-color: @primary;
+  }
+}
+.my_piker_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+  .piker_item {
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: @primary;
+    border-top: 1px solid @main-line;
+    &.act_item {
+      border-radius: 12px;
+      background-color: @primary;
+      color: @main-text;
+    }
+    &:last-child {
+      border-bottom: 1px solid @main-line;
+    }
+  }
+}
+.my_yk_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .login_input {
+    margin: 30px 0;
+    .label {
+      color: @primary;
+      padding-left: 10px;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    .input_box {
+      display: flex;
+      position: relative;
+      align-items: center;
+      background-color: @bg-clr;
+      height: 80px;
+      input {
+        height: 100%;
+        width: 100%;
+        line-height: 1em;
+        padding-left: 20px;
+        padding-right: 56px;
+        font-size: 30px;
+        color: @main-text;
+        border: 1px solid @main-line;
+        transition: all 0.5s ease-in-out;
+        &:focus {
+          border-color: @primary;
+        }
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        height: 26px;
+        width: 38px;
+      }
+      .my_cont_set {
+        text-align: center;
+        width: 260px;
+        font-size: 28px;
+        color: @primary;
+        background-color: @bf-clr;
+        height: 100%;
+        line-height: 80px;
+      }
+    }
+  }
+  .bot_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 260px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    background-color: @primary;
+  }
+}
+.my_drawer_model {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  background-color: @bf-clr;
+  color: @main-text;
+  height: 100%;
+  z-index: 101;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  &.an_start_slid {
+    animation: slidMove 0.5s ease-in;
+  }
+  &.an_end_slid {
+    animation: slidOut 0.5s ease-out;
+  }
+  .title {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    height: 140px;
+    font-size: 30px;
+    color: @primary;
+    display: flex;
+    align-items: center;
+  }
+  .drawer_box {
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid @main-line;
+    font-size: 26px;
+
+    .drawer_box_item {
+      height: 80px;
+      line-height: 80px;
+      text-indent: 20px;
+      &:not(:last-child) {
+        border-bottom: 1px solid @main-line;
+      }
+      &.drawer_box_item_act {
+        background-color: @primary;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+.my_info_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 30px;
+  border-radius: 8px;
+  color: @main-text;
+
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .my_info_box {
+    font-size: 28px;
+    color: @main-text;
+    margin-bottom: 40px;
+    .label {
+      color: @info-text;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .right_box {
+      border-radius: 6px;
+      border: 2px solid @primary;
+      padding: 10px;
+    }
+  }
+  .bot_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 260px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    background-color: @primary;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.my_notice_model {
+  width: 600px;
+  background-color: @bf-clr;
+  padding: 36px 24px;
+  border-radius: 8px;
+  color: @main-text;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &.an_start_move {
+    animation: startMove 0.2s ease-in;
+  }
+  .title {
+    font-size: 30px;
+    padding-bottom: 36px;
+  }
+  .hint_box {
+    width: 100%;
+    max-height: 600px;
+    overflow: auto;
+    background-color: #fff;
+  }
+  .bot_btn {
+    height: 62px;
+    border-radius: 8px;
+    width: 260px;
+    color: @main-text;
+    text-align: center;
+    line-height: 1em;
+    font-size: 32px;
+    margin-top: 36px;
+    background-color: @primary;
+  }
+}
+@keyframes slidMove {
+  0% {
+    transform: translateX(-80%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slidOut {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+@keyframes shakeBorder {
+  0% {
+    border-bottom-color: @primary;
+  }
+  50% {
+    border-bottom-color: @main-line;
+  }
+  100% {
+    border-bottom-color: @primary;
+  }
+}
+@keyframes startMove {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes endMove {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}

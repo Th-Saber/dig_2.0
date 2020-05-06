@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <title>币行-模拟</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+    #box {
+      height: 100%;
+      background-color: #4c3a55;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .left_tip {
+      position: fixed;
+      left: 0;
+      top: 4rem;
+      padding: 10px 22px;
+      background-color: #614b6d;
+      color: #fff;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 0 50px 50px 0;
+      font-size: 1.3rem;
+    }
+    .img_box {
+      width: 5rem;
+      margin: 8rem auto 0;
+      display: inline-block;
+    }
+    .logo {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 10px;
+    }
+    .down_load {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    a {
+      color: #fff;
+      font-size: 1rem;
+    }
+    a:active {
+      color: #fff;
+    }
+    .footer_img {
+      /* margin: 0 10px; */
+      margin-top: 40px;
+      overflow: hidden;
+    }
+    .foot {
+      /* margin-bottom: -4px; */
+      /* height: 457px; */
+      /* width: 142px; */
+    }
+
+    /* 微信浏览器出现蒙层 */
+    .mask {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+    }
+    .mask_img {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70%;
+      height: 13rem;
+    }
+  </style>
+  <body>
+    <div id="box">
+      <div class="img_box">
+        <img class="logo" src="./logo.jpg" alt="图标" />
+        <div class="down_load">
+          <!-- <a href="https://btch.com.cn/api-web/files-upload/app/btch.apk"
+            >点击下载</a
+          > -->
+          <a href="https://mn.btch.com.cn/api-web/files-upload/app/btch.apk"
+            >点击下载</a
+          >
+        </div>
+      </div>
+      <div class="footer_img">
+        <img class="foot" src="./img.png" alt="图片" />
+      </div>
+      <div class="left_tip">
+        币行
+      </div>
+      <!-- 微信浏览器时间 -->
+      <div class="mask">
+        <img class="mask_img" src="./message.png" alt="" />
+      </div>
+    </div>
+    <script>
+      window.onload = () => {
+        var u = navigator.userAgent;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isiOS) {
+          //   location.replace("https://d3ex.com/?id=tTcO");//正式
+          location.replace(" https://d3ex.com/?id=N94V"); //模拟盘
+        } else {
+          if (is_weixn()) {
+            let mask = document.querySelector(".mask");
+            mask.style.display = "block";
+          }
+          // 判断微信浏览器打开
+          function is_weixn() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+              return true;
+            } else {
+              return false;
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

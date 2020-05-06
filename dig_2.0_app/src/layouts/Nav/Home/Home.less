@@ -1,0 +1,104 @@
+@import "../../../assets/styles/theme.less";
+.home {
+  height: 100%;
+  background-color: @bf-clr;
+  .cousoul {
+    height: 416px;
+    width: 100%;
+    img {
+      height: 416px;
+    }
+  }
+  .grid_box {
+    background-color: @bg-clr;
+    padding: 24px;
+    .grid_item {
+      display: flex;
+      align-items: center;
+      height: 140px;
+      justify-content: center;
+      border-radius: 14px;
+      box-shadow: inset 0 0 10px 10px @primary;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+      img {
+        height: 80px;
+        width: 80px;
+      }
+      span {
+        margin-left: 20px;
+        color: @main-text;
+        font-size: 30px;
+      }
+    }
+  }
+  .infoBox {
+    padding: 0 24px;
+    background-color: @bg-clr;
+    .notice_box {
+      height: 100px;
+      align-items: center;
+      display: flex;
+      border-bottom: 1px solid @main-line;
+      .no_img {
+        height: 30px;
+        width: 30px;
+        margin: 0 16px;
+      }
+      .msg_carousel {
+        .msg_text {
+          font-size: 30px;
+          display: flex;
+          color: @main-text;
+          align-items: center;
+          .title {
+            width: 350px;
+            overflow: hidden; //超出的文本隐藏
+            text-overflow: ellipsis; //溢出用省略号显示
+            white-space: nowrap; //溢出不换行
+          }
+          .msg_time {
+            color: @int-text;
+            font-size: 26px;
+          }
+        }
+      }
+      .not_right_box {
+        display: flex;
+        align-items: center;
+        .not_icon {
+          color: @main-text;
+          margin-left: 16px;
+        }
+      }
+    }
+    .info_box {
+      display: flex;
+      height: 216px;
+      .item_info {
+        font-weight: 600;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title {
+          font-size: 30px;
+          color: @main-text;
+        }
+        .money {
+          font-size: 30px;
+          color: @int-up-clr;
+        }
+        .gains {
+          font-size: 28px;
+          color: @int-up-clr;
+        }
+        .act_fains {
+          color: @int-down-clr;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../../../../assets/styles/theme.less";
+.lineItem {
+  width: 100%;
+  .l_grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .down_box {
+    height: 380px;
+    .title {
+      font-size: 30px;
+      color: @main-text;
+    }
+    .down_title {
+      font-size: 30px;
+      color: @main-text;
+      margin-top: 10px;
+      span {
+        color: @int-up-clr;
+        font-size: 26px;
+      }
+    }
+    .com_tab {
+      div {
+        height: 68px;
+        line-height: 1.5em;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        &.div_up {
+          color: @int-down-clr;
+        }
+        &.div_down {
+          color: @int-up-clr;
+        }
+      }
+    }
+  }
+}
+// 底部数据列表
+.lineData {
+  background-color: @bg-clr;
+  .my_menu_box {
+    height: 204px;
+    padding: 26px 0;
+    margin: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .buy_type {
+      color: @info-text;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid @main-line;
+    }
+    .title_box {
+      font-size: 28px;
+      color: @primary;
+      span {
+        font-size: 26px;
+        color: @info-text;
+      }
+    }
+    .fn_box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.5fr;
+      .fn_com {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: @main-text;
+          font-size: 30px;
+          &:first-child {
+            color: @info-text;
+            font-size: 28px;
+            margin-bottom: 12px;
+          }
+        }
+        &.fn_1 {
+          margin-left: 10px;
+        }
+        &.fn_2 {
+        }
+        &.fn_3 {
+          span:last-child {
+            color: @primary;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  //   type ===2
+  .type2_menu_box {
+    padding: 24px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid @main-line;
+    }
+    .t_grid_box {
+      display: grid;
+      grid-template-columns: repeat(3, 33.3%);
+      .t_2_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .t_name {
+          color: @info-text;
+          font-size: 28px;
+        }
+        .t_value {
+          margin-top: 20px;
+          color: @primary;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+    }
+    .t_group_btn {
+      display: flex;
+      justify-content: flex-end;
+      margin: 24px 24px 0 0;
+      button {
+        text-align: center;
+        color: @main-text;
+        font-size: 30px;
+        border-radius: 12px;
+        padding: 16px 24px;
+        &.setIn {
+          border: 2px solid @primary;
+          margin-right: 40px;
+        }
+        &.setPin {
+          background-color: @primary;
+        }
+      }
+    }
+  }
+
+  .empty_data {
+    padding: 40px 0;
+    text-align: center;
+    color: @info-text;
+    font-size: 28px;
+  }
+}

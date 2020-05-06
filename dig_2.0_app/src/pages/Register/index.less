@@ -1,0 +1,96 @@
+@import "../../assets/styles/theme.less";
+// .vm(width,50);使用
+.register {
+  height: 100%;
+  background-color: @bf-clr;
+  color: @main-text;
+  .menu_box {
+    padding: 0 24px 80px;
+    border-top: 1px solid @main-line;
+  }
+  .login_icon {
+    padding: 47px 0;
+    text-align: center;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+    .logo_name {
+      padding-top: 20px;
+      font-size: 30px;
+    }
+  }
+  .login_input {
+    margin: 30px 0;
+    .label {
+      color: @primary;
+      padding-left: 10px;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    .input_box {
+      display: flex;
+      position: relative;
+      align-items: center;
+      background-color: @bg-clr;
+      height: 80px;
+      input {
+        height: 100%;
+        width: 100%;
+        line-height: 1em;
+        padding-left: 20px;
+        padding-right: 56px;
+        font-size: 30px;
+        color: @main-text;
+        border: 1px solid @main-line;
+        transition: all 0.5s ease-in-out;
+        &:focus {
+          border-color: @primary;
+        }
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        height: 26px;
+        width: 38px;
+      }
+      .my_cont_set {
+        text-align: center;
+        width: 260px;
+        font-size: 28px;
+        color: @primary;
+        background-color: @bf-clr;
+        height: 100%;
+        line-height: 80px;
+      }
+    }
+  }
+  .change_esss {
+    display: flex;
+    justify-content: flex-end;
+    .change_mail {
+      text-align: right;
+      color: @primary;
+    }
+  }
+  .btns {
+    text-align: center;
+    margin-top: 76px;
+    .btn {
+      text-align: center;
+      border-radius: 8px;
+      font-size: 30px;
+      color: @main-text;
+      width: 310px;
+      background-color: @primary;
+      height: 90px;
+      border: none;
+    }
+    div {
+      margin-top: 20px;
+      span {
+        color: @primary;
+      }
+    }
+  }
+}

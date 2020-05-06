@@ -1,0 +1,90 @@
+@import "./theme.less";
+
+#root {
+  height: 100%;
+}
+
+/* 自定义卡片样式 */
+
+.my_card {
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+// 页面样式
+.page_box {
+  height: 100%;
+  display: flex;
+  color: @main-text;
+  flex-direction: column;
+  background-color: @bf-clr;
+  .page_menu {
+    flex: 1;
+    overflow: auto;
+  }
+}
+//刷新
+.reflas {
+  display: flex;
+  justify-content: flex-end;
+  .jsjda_box {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: @primary;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+// 涨跌幅颜色
+.up {
+  color: @int-up-clr;
+}
+.down {
+  color: @int-down-clr;
+}
+.primary {
+  color: @primary;
+}
+.warning {
+  color: @warning;
+}
+// 涨跌幅颜色
+
+/* element */
+
+.am-tab-bar-bar::before {
+  height: 0 !important;
+}
+
+/* tab左右阴影 */
+
+.am-tabs-default-bar-prevpage,
+.am-tabs-default-bar-nextpage {
+  display: none !important;
+}
+
+/* tab现框背景色 */
+
+.am-tabs-default-bar-tab::after {
+  background-color: @main-line !important;
+}
+
+/* piker选择框颜色 */
+
+.forss {
+  background-color: @bg-clr !important;
+  .am-picker-col-mask {
+    height: 0 !important;
+  }
+  .am-picker-popup-item-active {
+    background-color: @bg-clr;
+    opacity: 0.5 !important;
+  }
+}

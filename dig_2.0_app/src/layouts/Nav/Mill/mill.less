@@ -1,0 +1,95 @@
+@import "../../../assets/styles/theme.less";
+.mill {
+  background-color: @bf-clr;
+  color: @main-text;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .mill_menu {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid @main-line;
+  }
+
+  .card_head {
+    height: 204px;
+    margin: 14px 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background: url("../../../assets/imgs/icon_my_bg.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    .zhuan_mask {
+      position: absolute;
+      border-radius: 12px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 20;
+      &.zhuan_mask_s {
+        animation: shadow_set 1.5s ease-in-out infinite;
+        // forwards
+      }
+    }
+    .top_car {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        font-size: 30px;
+        span {
+          font-size: 24px;
+          color: @info-text;
+        }
+      }
+      img {
+        width: 36px;
+        height: 22px;
+      }
+    }
+    .zhuan {
+      font-size: 30px;
+      color: @primary;
+      padding: 20px;
+    }
+    .money {
+      font-size: 50px;
+    }
+    .topup_btn {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      div {
+        height: 50px;
+        flex: 1;
+        font-size: 30px;
+        color: @primary;
+        text-align: center;
+        &:first-child {
+          border-right: 2px dashed @tabBar-off-text;
+        }
+      }
+    }
+  }
+}
+
+@keyframes shadow_set {
+  0% {
+    box-shadow: inset 0 0 5px 5px @primary_opt;
+  }
+  50% {
+    box-shadow: inset 0 0 20px 20px @primary_opt;
+  }
+  100% {
+    box-shadow: inset 0 0 5px 5px @primary_opt;
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../../assets/styles/theme.less";
+.my {
+  background-color: @bf-clr;
+  height: 100%;
+  display: flex;
+  color: @main-text;
+  flex-direction: column;
+  .my_menu {
+    flex: 1;
+    overflow: auto;
+    padding: 30px 24px;
+    border-top: 1px solid @main-line;
+    .head_top {
+      height: 420px;
+      background: url("../../../assets/imgs/my_bg.png") no-repeat center;
+      padding: 0 30px;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      align-items: center;
+      justify-content: center;
+      .head_avator {
+        .rell_img {
+          height: 140px;
+          width: 140px;
+          border-radius: 50%;
+        }
+        .default_avator {
+          img {
+            height: 140px;
+            width: 140px;
+          }
+        }
+      }
+      .head_info {
+        margin-top: 60px;
+        font-size: 36px;
+      }
+      .user_name {
+        font-size: 30px;
+        color: @primary;
+      }
+    }
+    // .info_card {
+    //   height: 240px;
+    //   border-radius: 14px;
+    //   background: url("../../../assets/imgs/icon_my_bg.png") no-repeat center;
+    //   background-size: cover;
+    //   padding: 30px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    //   .c_line {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     span {
+    //       font-size: 30px;
+    //     }
+    //     img {
+    //       width: 36px;
+    //       height: 22px;
+    //     }
+    //   }
+    //   .c_money {
+    //     font-size: 54px;
+    //   }
+    //   .topup_btn {
+    //     display: flex;
+    //     div {
+    //       height: 50px;
+    //       flex: 1;
+    //       font-size: 30px;
+    //       color: @primary;
+    //       text-align: center;
+    //       &:first-child {
+    //         border-right: 2px dashed @tabBar-off-text;
+    //       }
+    //     }
+    //   }
+    // }
+    .my_list_box {
+      background-color: @bg-clr;
+      border-radius: 14px;
+      .down_span {
+        font-size: 30px;
+        &.name_end {
+          color: @danger;
+        }
+        &.success {
+          color: @success;
+        }
+      }
+    }
+  }
+}

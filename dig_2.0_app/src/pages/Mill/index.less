@@ -1,0 +1,205 @@
+@import "../../assets/styles/theme.less";
+// 充值
+.topUp {
+  border-top: 1px solid @main-line;
+  .code_box {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .code_st_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      font-size: 28px;
+      color: @primary;
+      margin-bottom: 20px;
+    }
+    .code_text {
+      padding: 10px 16px;
+      border: 2px solid @primary;
+      font-size: 30px;
+      color: @main-text;
+      letter-spacing: 0;
+    }
+  }
+
+  .code_btn_group {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    button {
+      height: 80px;
+      line-height: 80px;
+      background-color: @primary;
+      color: @main-text;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 30px;
+      padding: 0 40px;
+      &.copy {
+        margin-right: 40px;
+      }
+    }
+  }
+  .tip {
+    font-size: 26px;
+    color: @main-text;
+    margin: 0 24px;
+    background-color: @bg-clr;
+    padding: 20px;
+  }
+}
+// 提现
+.withD {
+  border-top: 1px solid @main-line;
+  .top_menu_box {
+    text-align: right;
+    padding: 24px 24px 0;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .submit {
+    height: 80px;
+    line-height: 80px;
+    width: 80%;
+    background-color: @primary;
+    text-align: center;
+    font-size: 30px;
+    color: @main-text;
+    border-radius: 12px;
+    margin: 100px auto 0;
+    display: block;
+  }
+  .tip {
+    font-size: 26px;
+    color: @main-text;
+    margin: 100px 24px;
+    background-color: @bg-clr;
+    padding: 20px;
+  }
+  .all_btn {
+    height: 100%;
+    width: 200px;
+    background-color: @primary;
+    text-align: center;
+    font-size: 28px;
+    color: @main-text;
+    border-radius: 8px;
+  }
+  .login_input {
+    margin: 30px 24px;
+    .label {
+      color: @primary;
+      padding-left: 10px;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    .input_box {
+      display: flex;
+      position: relative;
+      align-items: center;
+      background-color: @bg-clr;
+      height: 80px;
+      input {
+        height: 100%;
+        width: 100%;
+        line-height: 1em;
+        padding-left: 20px;
+        padding-right: 56px;
+        font-size: 30px;
+        color: @main-text;
+        border: 1px solid @main-line;
+        transition: all 0.5s ease-in-out;
+        &:focus {
+          border-color: @primary;
+        }
+      }
+    }
+  }
+}
+// 体现数据
+.withDrawall_menu {
+  border-top: 1px solid @main-line;
+  //   height: 100%;
+  .top_msg {
+    display: flex;
+    justify-content: center;
+    padding: 10px 24px;
+    .right_box {
+      display: flex;
+      .btn_g {
+        font-size: 30px;
+        // color: #555;
+        color: @primary;
+
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        width: 200px;
+        background-color: @bf-clr;
+
+        &.btn_g_act {
+          background-color: @primary;
+          color: @main-text;
+        }
+        &:first-child {
+          border-radius: 10px 0 0 10px;
+        }
+        &:last-child {
+          border-radius: 0 10px 10px 0;
+        }
+      }
+    }
+  }
+
+  .s_empty_data {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 26px;
+    color: @info-text;
+  }
+  .fb_list_box {
+    text-align: center;
+    .fb_list_head {
+      font-size: 28px;
+      color: @info-text;
+      height: 100px;
+      line-height: 100px;
+    }
+    .list_box_item {
+      font-size: 26px;
+      color: @main-text;
+      height: 180px;
+      .time_s {
+        font-size: 26px;
+        color: @info-text;
+        text-align: left;
+        grid-column-start: span 4;
+      }
+      .bn_btn {
+        height: 60px;
+        line-height: 60px;
+        width: 100px;
+        font-size: 26px;
+        color: @main-text;
+        text-align: center;
+        border-radius: 6px;
+        background-color: @primary;
+        margin: 0 auto;
+      }
+    }
+  }
+  .fb_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 25% 25% 20%;
+    &:not(:last-child) {
+      border-bottom: 1px solid @main-line;
+    }
+  }
+}
